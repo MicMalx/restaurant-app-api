@@ -10,13 +10,13 @@ Project functionalities:
 # See how the API works.
 
 You can test the API with for example Postman.
-The API is available at: https://restaurant-spa.onrender.com/
+The API is available at: https://restaurant-api-seqm.onrender.com/
 
 \* The first response of the API may take longer because the API run on the free hosting which spun down the web service after 15 minutes of inactivity.
 
 # Available endpoints.
-### GET https://restaurant-spa.onrender.com/api/meals
-### POST https://restaurant-spa.onrender.com/api/users/signup
+### GET https://restaurant-api-seqm.onrender.com/api/meals
+### POST https://restaurant-api-seqm.onrender.com/api/users/signup
 
 ```
 {
@@ -24,14 +24,14 @@ The API is available at: https://restaurant-spa.onrender.com/
     "password": "test"
 }
 ```
-### POST https://restaurant-spa.onrender.com/api/users/login
+### POST https://restaurant-api-seqm.onrender.com/api/users/login
 ```
 {
     "email": "test@test.com",
     "password": "test"
 }
 ```
-### POST https://restaurant-spa.onrender.com/api/orders/create
+### POST https://restaurant-api-seqm.onrender.com/api/orders/create
 
 To connect with this endpoint You need to add header "Authorization" with "Bearer ${TOKEN}" value. Replace ${TOKEN} with the value returned from singup/login endpoint.
 ```
@@ -55,7 +55,7 @@ To connect with this endpoint You need to add header "Authorization" with "Beare
 ```
 paymentMethod parameter must be "cash" or "card" or API will return error.
 
-### GET https://restaurant-spa.onrender.com/api/orders/user
+### GET https://restaurant-api-seqm.onrender.com/api/orders/user
 
 To connect with this endpoint You need to add header "Authorization" with "Bearer ${TOKEN}" value. Replace ${TOKEN} with the value returned from singup/login endpoint.
 
