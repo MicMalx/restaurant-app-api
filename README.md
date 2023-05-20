@@ -25,14 +25,20 @@ To run this project locally on Your machine:
 ## POST http://localhost:5000/api/users/signup
 
 {
+
     "email": "test@test.com",
+
     "password": "test"
+
 }
 ## POST http://localhost:5000/api/users/login
 
 {
+
     "email": "test@test.com",
+
     "password": "test"
+
 }
 
 ## POST http://localhost:5000/api/orders/create
@@ -41,20 +47,34 @@ To connect with this endpoint You need to add header "Authorization" with "Beare
 
 {
     "name": "test",
+
     "address": "test 1/1",
+
     "phoneNumber": "555 555 555",
+
     "paymentMethod": "cash",
+
     "price": 1,
+
     "meals": [
+
         {
+
             "name": "mealName",
+
             "amount": 1
         },
+
         {
+
             "name": "mealName",
+
             "amount": 1
+
         }
+
     ]
+    
 }
 
 paymentMethod parameter must be "cash" or "card" or API will return error.
